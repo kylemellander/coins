@@ -6,9 +6,11 @@
   <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="container ak-main-container">
-    <h1 class="ak-title">Coin Combo!</h1>
-    <%= yield %>
+  <h1 class="ak-title">Coin Combo!</h1>
+  <div class="container-fluid ak-main-container">
+    <div class="container">
+      <%= yield %>
+    </div>
   </div>
 </body>
 </html>

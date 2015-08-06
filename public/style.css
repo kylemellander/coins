@@ -1,0 +1,62 @@
+body {
+  background:url("img/coins.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#fff;
+  margin:0;
+  padding:0;
+}
+h1.ak-title {
+  font-size:6em;
+  text-align:center;
+  width:100%;
+  background:rgba(0,0,0,0.75);
+  margin-top:0;
+  padding: 15px 0;
+}
+.ak-form {
+  margin-top:150px;
+  font-size:3em;
+  width:100%;
+  text-align:center;
+}
+.ak-input-money {
+  font-size:1.2em;
+  color:#000;
+  background:rgba(255,255,255,0.75);
+  border:0;
+  display:block;
+  width:100%;
+}
+.ak-form label {
+  font-size:1.2em;
+  text-align:center;
+  width:100%;
+}
+.ak-form button {
+  font-size:.8em;
+  width:400px;
+  margin: 20px auto 0 auto;
+}
+.ak-result {
+  text-align:center;
+}
+.ak-result h3 {
+  font-size:4em;
+  margin-bottom:20px;
+}
+.ak-result a {
+  margin-top:20px;
+  background:green;
+  border-radius:3px;
+  padding: 8px 14px;
+  font-size:2em;
+  color:#fff;
+}
+.ak-result a:hover {
+  color:#fff;
+  text-decoration:none;
+  background:#333;
+}
