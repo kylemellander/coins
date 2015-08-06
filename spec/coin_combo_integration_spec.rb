@@ -1,5 +1,5 @@
 require('capybara/rspec')
-require('coin_combo')
+require('./app')
 Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
