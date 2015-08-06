@@ -1,17 +1,25 @@
 class Numeric
   def coins
-    total = self
+    total = self*100
     quarters = 0
     dimes = 0
     nickels = 0
     pennies = 0
-    until total < 0.25
-      total -= 0.25
+    until total < 25
+      total -= 25
       quarters += 1
     end
-    until total < 0.10
-      total -= 0.10
+    until total < 10
+      total -= 10
       dimes += 1
+    end
+    until total < 5
+      total -= 5
+      nickels += 1
+    end
+    until total < 1
+      total -= 1
+      pennies += 1
     end
     output_array = []
     coins = {"quarter" => quarters, "dime" => dimes, "nickel" => nickels, "penny" => pennies}
@@ -34,17 +42,6 @@ class Numeric
     else
       output = output_array.join(" ")
     end
-    # index = 0
-    # until output_array.empty?
-    #   change = "Your change is" + "#{output_array[index]}"
-    #   index += 1
-    # end
-    # change
-    # quarters_s = "#{quarters} quarters" if quarters > 0
-    # if dimes > 0
-    #   dimes_s = "#{dimes} dimes"
-    #   dimes_s.prepend(" ") if quarters > 0
-    # end
     "Your change is #{output}."
   end
 end
