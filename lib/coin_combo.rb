@@ -1,4 +1,4 @@
-class Numeric
+class Float
   def coins
     total = self*100
     quarters = 0
